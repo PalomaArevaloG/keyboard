@@ -1,0 +1,13 @@
+.keyboard-button {
+	border: solid 1px grey;
+	height: 50px;
+	&_square {
+		width: 50px;
+	}
+	&_rectangle {
+		width: 100px;
+	}
+	&_space {
+		width: 600px;
+	}
+}
