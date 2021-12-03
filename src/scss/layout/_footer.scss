@@ -1,8 +1,9 @@
 .page__footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100vw;
-  padding: 1rem;
-  color: $color-secondary;
+	position: relative;
+	left: 0;
+	bottom: 0;
+	width: 100vw;
+	padding: 2rem;
+
+	color: $color-secondary;
 }

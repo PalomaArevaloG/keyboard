@@ -1,7 +1,60 @@
 body {
 	padding: 2rem;
 	height: 100vh;
-
 	background-color: $color-bg;
 	font-family: $font-main;
+}
+.page__main {
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+}
+.keyboard {
+	height: 100%;
+	width: 100%;
+	border: 2px solid grey;
+	border-radius: 4px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	text-align: center;
+	padding: 1em;
+	&_line {
+		width: 100%;
+		display: flex;
+		padding: 2px;
+		justify-content: center;
+	}
+}
+.keyboard-button {
+	border: solid 1px grey;
+	border-radius: 4px;
+	font-size: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 2px;
+	padding: 2px;
+	@media all and (min-width: 768px) {
+		height: 50px;
+		font-size: 20px;
+	}
+}
+.square {
+	width: 10%;
+}
+.rectangle {
+	width: 20%;
+}
+.space {
+	width: 60%;
+	margin-top: 1em;
+}
+.textarea {
+	height: 100px;
+	width: 100%;
+	border: solid 2px grey;
+	border-radius: 4px;
+	margin-top: 1em;
 }
