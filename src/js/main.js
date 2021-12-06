@@ -10,16 +10,28 @@ for (let i = 0; i < key.length; i++) {
 	key[i].addEventListener('click', handleButtonClick);
 }
 function handleButtonClick(ev) {
-	console.log(ev.currentTarget.value);
 	textarea.value += ev.currentTarget.innerText;
 }
 function handleSpaceClick(ev) {
-	console.log(ev.currentTarget.value);
+	ev.preventDefault();
 	textarea.value += ' ';
 }
 space.addEventListener('click', handleSpaceClick);
+
+function handleDelClick(ev) {
+	ev.preventDefault();
+	location.reload();
+	//así borro todo
+}
+del.addEventListener('click', handleDelClick);
+function handleCapsClick(ev) {
+	ev.preventDefault();
+	textarea.classList.toggle('uppercase');
+	//ASÍ CONVIERTO TODO EN MAYUSCULAS O MINUSCULAS
+}
+caps.addEventListener('click', handleCapsClick);
 //action keys
-/* - si pulso space---space
--si pulso delete --- delete
-- si pulso caps--- mayuscula
+/*
+
+
 - si pulso more ---teclado de simbolos */
