@@ -20,6 +20,7 @@ body {
 	justify-content: space-between;
 	text-align: center;
 	padding: 1em;
+	margin-top:1em;
 	&_line {
 		width: 100%;
 		display: flex;
@@ -58,9 +59,8 @@ body {
 	border-radius: 4px;
 	margin-top: 1em;
 }
-.uppercase{
-	text-transform: uppercase;
-	
+.caps.on {
+	background-color: #CA4200;
 }
 .hidden{
  display: none;
