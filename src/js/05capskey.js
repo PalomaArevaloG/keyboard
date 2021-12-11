@@ -1,12 +1,11 @@
 
 function handleCapsClick(ev) {
 	ev.preventDefault();
-	
-	ev.currentTarget.innerHTML.toUpperCase();
-	console.log(textarea.toUpperCase());
+	caps.classList.toggle("red");
+	keys.forEach(elem => elem.classList.toggle("upper"));
 
-	//textarea.classList.toggle('uppercase');
-	//ASÍ CONVIERTO TODO EN MAYUSCULAS O MINUSCULAS
-}
+	}
 caps.addEventListener('click', handleCapsClick);
+
+
 

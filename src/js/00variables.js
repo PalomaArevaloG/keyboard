@@ -1,7 +1,8 @@
 
 'use strict';
 let textarea = document.querySelector('.js-textarea');
-let key = document.querySelectorAll('.js-key');
+let keys = document.querySelectorAll('.js-key');
+let square = document.querySelectorAll('.square');
 let del = document.querySelector('.js-delete');
 let caps = document.querySelector('.js-caps');
 let space = document.querySelector('.js-space');
