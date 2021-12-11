@@ -1,7 +1,7 @@
 
 function handleCapsClick(ev) {
 	ev.preventDefault();
-	caps.classList.toggle("red");
+	caps.classList.toggle("press");
 	keys.forEach(elem => elem.classList.toggle("upper"));
 
 	}
