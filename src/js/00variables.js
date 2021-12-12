@@ -1,4 +1,3 @@
-
 'use strict';
 let textarea = document.querySelector('.js-textarea');
 let keys = document.querySelectorAll('.js-key');

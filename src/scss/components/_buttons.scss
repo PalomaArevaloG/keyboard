@@ -1,0 +1,35 @@
+.keyboard-button {
+	border: solid 1px grey;
+	border-radius: 4px;
+	font-size: 10px;
+	display: flex;
+	background:linear-gradient( to right,$pinky-color, $blue-color);
+	justify-content: center;
+	align-items: center;
+	margin: 2px;
+	padding: 2px;
+	transition: box-shadow 0.3s ease, transform 0.15s ease;
+	box-shadow: 0 0 1px #888,0 1px 0 #fff, 0 6px 0 $pinky-color, 0 8px 17px rgba(#444, 0.4), 2px 1px 4px rgba(#444, 0.25), -2px 1px 4px rgba(#444, 0.25), 0 9px 16px rgba(#444, 0.1);
+	&:hover, &:focus {
+    box-shadow: 0 0 1px #888,0 1px 0 #fff, 0 4px 0 $pinky-color, 0 2px 35px rgba(#444, 0.3), 2px 2px 4px rgba(#444, 0.25), -2px 2px 4px rgba(#444, 0.25), 0 7px 4px rgba(#444, 0.1);
+    transform: translateY(2px);
+    }
+    &:active {
+        box-shadow: 0 0 1px #888,0 1px 0 #fff, 0 0 0 $pinky-color, 0 0px 30px rgba(#444, 0.15), 2px 2px 4px rgba(#444, 0.25), -2px 2px 4px rgba(#444, 0.25), 0 0px 4px rgba(#444, 0.25);
+        transform: translateY(4px); 
+    }
+	@media all and (min-width: 768px) {
+		height: 50px;
+		font-size: 20px;
+	}
+}
+.square {
+	width: 10%;
+}
+.rectangle {
+	width: 20%;
+}
+.space {
+	width: 60%;
+	margin-top: 1em;
+}
